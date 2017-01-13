@@ -49,7 +49,11 @@ This report uses the twitter followers as the audience. To create custom or twee
 | countriesFilter| Array      | Filtering by countries options to be used when creating a filtered report. Format ["usa"].
 
 #### genderFilter, agesFilter, countriesFilter format
+```json
+
 ["filter1", "filter2"]
+
+```
 
 ## StatSocial.createFollowerReportByTwitterHandle
 This report uses the twitter followers as the audience. To create custom or tweet reports other methods must be used. Any report older than two days will be automatically regenerated upon create.
@@ -63,7 +67,11 @@ This report uses the twitter followers as the audience. To create custom or twee
 | countriesFilter| Array      | Filtering by countries options to be used when creating a filtered report. Format ["usa"].
 
 #### genderFilter, agesFilter, countriesFilter format
+```json
+
 ["filter1", "filter2"]
+
+```
 
 ## StatSocial.generateCustomReport
 Used to create a custom report. This report treats the list of ids or handles as the audience (not their followers as in the twitter report). To create follower or tweet reports other methods must be used.
@@ -94,7 +102,11 @@ Used to create a custom report. This report treats the list of ids or handles as
 | countriesFilter| Array      | Filtering by countries options to be used when creating a filtered report. Format ["usa"].
 
 #### genderFilter, agesFilter, countriesFilter format
+```json
+
 ["filter1", "filter2"]
+
+```
 
 ## StatSocial.createTweetReport
 This report details the audience of the users who have tweeted content that matches what was provided in the keywords. To create custom or twitter reports other methods must be used.
