@@ -1,5 +1,7 @@
+[![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.com/package/StatSocial/functions?utm_source=RapidAPIGitHub_StatSocialFunctions&utm_medium=button&utm_content=RapidAPI_GitHub)
+
 # StatSocial Package
-Understand and target your social audience.
+Generate social analytics reports programmatically.
 * Domain: statsocial.com
 * Credentials: apiKey
 
