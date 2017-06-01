@@ -12,6 +12,17 @@ Generate social analytics reports programmatically.
 3. Copy API Key and use it as credential.
 4. If you use all report tokens, you can contact with support.
 
+## Custom datatypes:
+ |Datatype|Description|Example
+ |--------|-----------|----------
+ |Datepicker|String which includes date and time|```2016-05-28 00:00:00```
+ |Map|String which includes latitude and longitude coma separated|```50.37, 26.56```
+ |List|Simple array|```["123", "sample"]```
+ |Select|String with predefined values|```sample```
+ |Array|Array of objects|```[{"Second name":"123","Age":"12","Photo":"sdf","Draft":"sdfsdf"},{"name":"adi","Second name":"bla","Age":"4","Photo":"asfserwe","Draft":"sdfsdf"}] ```
+
+
+
 ## StatSocial.getReports
 Output is ordered by Demographic and followed by Affinity information. For each data point the following metrics are provided value, count, mean, percentile, multiplicity and average. For Geographic, and Demographic data points an additional statistical_info metric will be present with information regarding statistical relevance.
 
@@ -46,9 +57,9 @@ This report uses the twitter followers as the audience. To create custom or twee
 |----------------|------------|----------
 | apiKey         | credentials| API key.
 | twitterId      | String     | twitter_id must be sent with all client requests. Multiple handles are separated by commas.
-| genderFilter   | Array      | Filtering by gender options to be used when creating a filtered report. Format ["male"].
-| agesFilter     | Array      | Filtering by ages options to be used when creating a filtered report. Format ["18-24"].
-| countriesFilter| Array      | Filtering by countries options to be used when creating a filtered report. Format ["usa"].
+| genderFilter   | List      | Filtering by gender options to be used when creating a filtered report. Format ["male"].
+| agesFilter     | List      | Filtering by ages options to be used when creating a filtered report. Format ["18-24"].
+| countriesFilter| List      | Filtering by countries options to be used when creating a filtered report. Format ["usa"].
 
 #### genderFilter, agesFilter, countriesFilter format
 ```json
@@ -64,9 +75,9 @@ This report uses the twitter followers as the audience. To create custom or twee
 |----------------|------------|----------
 | apiKey         | credentials| API key.
 | twitterHandle  | String     | twitter_handle must be sent with all client requests. Multiple ids are separated by commas.
-| genderFilter   | Array      | Filtering by gender options to be used when creating a filtered report. Format ["male"].
-| agesFilter     | Array      | Filtering by ages options to be used when creating a filtered report. Format ["18-24"].
-| countriesFilter| Array      | Filtering by countries options to be used when creating a filtered report. Format ["usa"].
+| genderFilter   | List      | Filtering by gender options to be used when creating a filtered report. Format ["male"].
+| agesFilter     | List      | Filtering by ages options to be used when creating a filtered report. Format ["18-24"].
+| countriesFilter| List      | Filtering by countries options to be used when creating a filtered report. Format ["usa"].
 
 #### genderFilter, agesFilter, countriesFilter format
 ```json
@@ -99,9 +110,9 @@ Used to create a custom report. This report treats the list of ids or handles as
 |----------------|------------|----------
 | apiKey         | credentials| API key.
 | uploadHash     | String     | Name of report.
-| genderFilter   | Array      | Filtering by gender options to be used when creating a filtered report. Format ["male"].
-| agesFilter     | Array      | Filtering by ages options to be used when creating a filtered report. Format ["18-24"].
-| countriesFilter| Array      | Filtering by countries options to be used when creating a filtered report. Format ["usa"].
+| genderFilter   | List      | Filtering by gender options to be used when creating a filtered report. Format ["male"].
+| agesFilter     | List      | Filtering by ages options to be used when creating a filtered report. Format ["18-24"].
+| countriesFilter| List      | Filtering by countries options to be used when creating a filtered report. Format ["usa"].
 
 #### genderFilter, agesFilter, countriesFilter format
 ```json
@@ -120,9 +131,9 @@ This report details the audience of the users who have tweeted content that matc
 | startDate      | String     | A unix timestamp. start_date will be set to the previous midnight.
 | endDate        | String     | A unix timestamp. start_date will be set to the previous midnight.
 | terms          | String     | String or Array of JSON Objects. If you are tracking a single term, then the keyword itself is suffice otherwise, tracking multiple terms must be in JSON form. Which results in filtering tweets containing 'http://google.com' OR '#test' AND 'test2'. (NOTE) Make sure to URL encode the terms value for multiple terms.
-| genderFilter   | Array      | Filtering by gender options to be used when creating a filtered report. Format ["male"].
-| agesFilter     | Array      | Filtering by ages options to be used when creating a filtered report. Format ["18-24"].
-| countriesFilter| Array      | Filtering by countries options to be used when creating a filtered report. Format ["usa"].
+| genderFilter   | List      | Filtering by gender options to be used when creating a filtered report. Format ["male"].
+| agesFilter     | List      | Filtering by ages options to be used when creating a filtered report. Format ["18-24"].
+| countriesFilter| List      | Filtering by countries options to be used when creating a filtered report. Format ["usa"].
 
 #### If you are tracking single term, use this input format
 test2

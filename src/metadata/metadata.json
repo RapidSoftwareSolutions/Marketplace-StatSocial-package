@@ -134,21 +134,36 @@
         },
         {
           "name": "genderFilter",
-          "type": "Array",
+          "type": "List",
           "info": "Filtering by gender options to be used when creating a filtered report. Format [\"male\"].",
-          "required": false
+          "required": false,
+          "structure": {
+            "name": "gender",
+            "type": "String",
+            "info": "Filter item"
+          }
         },
         {
           "name": "agesFilter",
-          "type": "Array",
+          "type": "List",
           "info": "Filtering by ages options to be used when creating a filtered report. Format [\"18-24\"].",
-          "required": false
+          "required": false,
+          "structure": {
+            "name": "ages",
+            "type": "String",
+            "info": "Filter item"
+          }
         },
         {
           "name": "countriesFilter",
-          "type": "Array",
+          "type": "List",
           "info": "Filtering by countries options to be used when creating a filtered report. Format [\"usa\"].",
-          "required": false
+          "required": false,
+          "structure": {
+            "name": "countries",
+            "type": "String",
+            "info": "Filter item"
+          }
         }
       ],
       "callbacks": [
@@ -180,21 +195,36 @@
         },
         {
           "name": "genderFilter",
-          "type": "Array",
+          "type": "List",
           "info": "Filtering by gender options to be used when creating a filtered report. Format [\"male\"].",
-          "required": false
+          "required": false,
+          "structure": {
+            "name": "gender",
+            "type": "String",
+            "info": "Filter item"
+          }
         },
         {
           "name": "agesFilter",
-          "type": "Array",
+          "type": "List",
           "info": "Filtering by ages options to be used when creating a filtered report. Format [\"18-24\"].",
-          "required": false
+          "required": false,
+          "structure": {
+            "name": "ages",
+            "type": "String",
+            "info": "Filter item"
+          }
         },
         {
           "name": "countriesFilter",
-          "type": "Array",
+          "type": "List",
           "info": "Filtering by countries options to be used when creating a filtered report. Format [\"usa\"].",
-          "required": false
+          "required": false,
+          "structure": {
+            "name": "countries",
+            "type": "String",
+            "info": "Filter item"
+          }
         }
       ],
       "callbacks": [
@@ -288,21 +318,36 @@
         },
         {
           "name": "genderFilter",
-          "type": "Array",
+          "type": "List",
           "info": "Filtering by gender options to be used when creating a filtered report. Format [\"male\"].",
-          "required": false
+          "required": false,
+          "structure": {
+            "name": "gender",
+            "type": "String",
+            "info": "Filter item"
+          }
         },
         {
           "name": "agesFilter",
-          "type": "Array",
+          "type": "List",
           "info": "Filtering by ages options to be used when creating a filtered report. Format [\"18-24\"].",
-          "required": false
+          "required": false,
+          "structure": {
+            "name": "ages",
+            "type": "String",
+            "info": "Filter item"
+          }
         },
         {
           "name": "countriesFilter",
-          "type": "Array",
+          "type": "List",
           "info": "Filtering by countries options to be used when creating a filtered report. Format [\"usa\"].",
-          "required": false
+          "required": false,
+          "structure": {
+            "name": "countries",
+            "type": "String",
+            "info": "Filter item"
+          }
         }
       ],
       "callbacks": [

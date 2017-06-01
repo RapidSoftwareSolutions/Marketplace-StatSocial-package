@@ -1,4 +1,5 @@
 <?php
+
 require dirname(__DIR__) . '/vendor/autoload.php';
 header('Content-type: application/json');
 define('RAPID_IN', TRUE);
