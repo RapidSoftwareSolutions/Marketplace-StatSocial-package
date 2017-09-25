@@ -13,6 +13,13 @@
       "apiKey"
     ]
   },
+  "steps": [
+    "Log in or sign up at Stat Social (http://www.statsocial.com/)",
+    "Register via Twitter account",
+    "In your account go to Settings / Plan Info (http://account.statsocial.com/#settings/plan)",
+    "Copy API Key and use it as credential",
+    "If you use all report tokens, you can contact with support"
+  ],
   "blocks": [
     {
       "name": "getReports",
